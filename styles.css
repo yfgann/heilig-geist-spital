@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto; 
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel {
+    float: left;
+    width: 40%;
+    padding-right: 2%;
+}
+
+.right-panel {
+    float: right;
+    width: 58%;
+}
+
+.filter-section {
+    font-size: 1.2em;
+}
+
+.search-results {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 1.2em;
+}
+
+.hospital-details-container {
+    clear: both;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px; 
+}
+
+.hospital-details {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hospital-image-info {
+    flex: 1;
+    padding-left: 20px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#hospital-img {
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    color: grey;
+    line-height: 20px
+}
+
+/* Style for the table */
+.hospital-details-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f7f7f7;
+}
+
+.hospital-details-container table, .hospital-details-container table td {
+    border: 1px solid #e0e0e0;
+}
+
+.hospital-details-container table td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+/* Making the first column a bit bold for clear differentiation */
+.hospital-details-container table td:first-child {
+    font-weight: 600;
+    width: 50%;
+    background-color: #e9e9e9;
+}
+
+#image-details {
+    font-size: 12px;
+    color: #555;
+    margin-top: 1px;
+}
+
+#hospital-details-section,
+#hospital-image-section {
+    display: none;
+}

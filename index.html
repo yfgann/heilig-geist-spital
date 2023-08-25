@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Existing Heilig-Geist-Hospitals in Germany</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlYBvEo82LvLgDGeKPZI4YIquIMrScAmc&callback=initMap" async defer></script>
+    <script src="scripts.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Existing Heilig-Geist-Hospitals in Germany</h1>
+    </header>
+
+    <!-- Main Content -->
+<main>
+
+    <!-- Left Panel -->
+    <section class="left-panel">
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <h2>Search & Filter</h2>
+            <label for="relation-to-church">Relation to the church:</label>
+            <select id="relation-to-church">
+                <option value="all" selected>All</option>
+                <option value="connected">Connected</option>
+                <option value="courtyard complex">Courtyard Complex</option>
+                <option value="separated">Separated</option>
+                <option value="without church">Without Church</option>
+            </select>
+        </div>
+
+        <!-- Search Results -->
+        <div class="search-results">
+            <!-- Filtered hospitals will be displayed here -->
+        </div>
+
+    </section>
+
+    <!-- Right Panel -->
+    <section class="right-panel">
+        <div id="map"></div>
+    </section>
+    
+    <!-- Hospital Details below both panels -->
+    <section class="hospital-details-container">
+
+        <!-- Hospital Details (Table) -->
+        <div class="hospital-details" id="hospital-details-section">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Name:</td>
+                        <td id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td id="address"></td>
+                    </tr>
+                    <tr>
+                        <td>Construction year:</td>
+                        <td id="construction_year"></td>
+                    </tr>
+                    <tr>
+                        <td>Belonged to Hospital Order of the Holy Ghost:</td>
+                        <td id="belonged_to_order"></td>
+                    </tr>
+                    <tr>
+                        <td>Last major reconstruction:</td>
+                        <td id="last_major_reconstruction"></td>
+                    </tr>
+                    <tr>
+                        <td>Relation to the church:</td>
+                        <td id="relation_church"></td>
+                    </tr>
+                    <tr>
+                        <td>Current status:</td>
+                        <td id="current_status"></td>
+                    </tr>
+                    <tr>
+                        <td>Architectural style:</td>
+                        <td id="architectural_style"></td>
+                    </tr>
+                </tbody>
+            </table>            
+        </div>
+
+        <!-- Hospital Image & Information -->
+        <div class="hospital-image-info" id="hospital-image-section">
+            <div class="hospital-image">
+                <img src="" id="hospital-img" alt="Hospital Image">
+            </div>
+            <div id="image-details">
+                <span id="author"></span>,
+                <span id="creation_date"></span>,
+                <span id="license"></span>
+            </div>
+        </div>
+
+
+    </section>
+
+</main>
+
+    <footer>
+        Yufei Guo, DH Certificate Programme<br>
+        <a href="mailto:annyufeiguo@gmail.com">annyufeiguo@gmail.com</a>
+    </footer>
+</body>
+
+</html>
